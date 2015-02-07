@@ -51,6 +51,7 @@
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\FingerCountChecker.cs" />
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\HandController.cs" />
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\HandOpenChecker.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\NormalVectorChecker.cs" />
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\RevolvingCamera.cs" />
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\ScreenMover.cs" />
      <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\WorldMover.cs" />

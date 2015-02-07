@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LeapMotion/Leap_Boilerplate/scripts/LeapManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LeapMotion/Leap_Boilerplate/scripts_for_example_scenes/FingerCountChecker.cs">
     <Files>
-      <File FileName="Assets/LeapMotion/Leap_Boilerplate/scripts/LeapManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeapMotion/Leap_Boilerplate/scripts/LeapManager.cs" Line="177" Column="17" />
+      <File FileName="Assets/LeapMotion/Leap_Boilerplate/scripts_for_example_scenes/HandController.cs" Line="18" Column="48" />
+      <File FileName="Assets/LeapMotion/Leap_Boilerplate/scripts_for_example_scenes/FingerCountChecker.cs" Line="16" Column="70" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

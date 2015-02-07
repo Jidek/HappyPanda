@@ -5,8 +5,10 @@ using Leap;
 public class HandController : MonoBehaviour {
 	public GameObject[] fingers;
 	public GameObject[] colliders;
+	public bool handVisible;
 
 	private LeapManager _leapManager;
+	private Vector3 normalOutput;
 	// Use this for initialization
 	void Start () {
 		_leapManager = (GameObject.Find("LeapManager")as GameObject).GetComponent(typeof(LeapManager)) as LeapManager;
@@ -15,8 +17,9 @@ public class HandController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Hand primeHand = _leapManager.frontmostHand();
+		normalOutput = primeHand.PalmNormal.ToUnity();
 
-		if(primeHand.IsValid)
+		if(handVisible && primeHand.IsValid)
 		{
 			Vector3[] fingerPositions = _leapManager.getWorldFingerPositions(primeHand);
 			gameObject.transform.position = primeHand.PalmPosition.ToUnityTranslated();
@@ -54,5 +57,9 @@ public class HandController : MonoBehaviour {
 			}
 		}
 
+	}
+
+	public Vector3 getNormal(){
+		return normalOutput;
 	}
 }
