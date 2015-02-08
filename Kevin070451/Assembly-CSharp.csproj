@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{6A630D0D-8F6B-24D6-5D1F-3DBD64046D4A}</ProjectGuid>
+	<ProjectGuid>{2D1D4272-8919-EC72-1326-AE1972158D92}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,7 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts\LeapExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\FingerCountChecker.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\HandOpenChecker.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\NormalVectorChecker.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\RevolvingCamera.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\ScreenMover.cs" />
+     <Compile Include="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\WorldMover.cs" />
+     <Compile Include="Assets\Scripts for Leap\HandController.cs" />
+     <Compile Include="Assets\Scripts for Leap\LeapManager.cs" />
+     <Compile Include="Assets\Scripts for Leap\LeapPlayerController.cs" />
      <None Include="Assets\LeapMotion\Leap_Boilerplate\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
@@ -54,6 +63,12 @@
  <Reference Include="LeapCSharp.NET3.5">
  <HintPath>/Users/joelkalos1/Develop/Unity Stuff/HappyPanda/Kevin070451/Assets/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6A630D0D-8F6B-24D6-5D1F-3DBD64046D4A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{8660C8CF-E7AA-CFE2-0111-1A2C18848602}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
