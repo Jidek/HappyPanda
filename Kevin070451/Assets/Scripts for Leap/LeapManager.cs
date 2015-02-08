@@ -188,6 +188,7 @@ public class LeapManager : MonoBehaviour {
 		{
 			_mainCam = (GameObject.FindGameObjectWithTag("MainCamera") as GameObject).GetComponent(typeof(Camera)) as Camera;
 		}
+		//_mainCam.rect = new Rect (0.7f, 0f, 0.5f, 0.5f);
 		Debug.Log(_mainCam);
 	}
 	
@@ -221,6 +222,9 @@ public class LeapManager : MonoBehaviour {
 				_pointerAvailible = false; 
 			}
 		}
+
+		
+		_mainCam.rect = new Rect (0.7f, 0f, 0.5f, 0.5f);
 	}
 
 	//Public Instance Methods

@@ -4,7 +4,7 @@ using System.Collections;
 public class TerrainWrapper : MonoBehaviour {
 	
 	public GameObject player;
-	private float TERRAIN_SIZE = 1024f;
+	public float TERRAIN_SIZE;
 	private Vector3 newPos;
 	
 	void FixedUpdate () {
