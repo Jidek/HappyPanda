@@ -9,6 +9,7 @@ public class HandController : MonoBehaviour {
 
 	private LeapManager _leapManager;
 	private Vector3 normalOutput;
+	private float height;
 	// Use this for initialization
 	void Start () {
 		_leapManager = (GameObject.Find("LeapManager")as GameObject).GetComponent(typeof(LeapManager)) as LeapManager;
@@ -18,6 +19,7 @@ public class HandController : MonoBehaviour {
 	void Update () {
 		Hand primeHand = _leapManager.frontmostHand();
 		normalOutput = primeHand.PalmNormal.ToUnity();
+		height = primeHand.PalmPosition.ToUnity ().y;
 
 		if(handVisible && primeHand.IsValid)
 		{
@@ -61,5 +63,9 @@ public class HandController : MonoBehaviour {
 
 	public Vector3 getNormal(){
 		return normalOutput;
+	}
+
+	public float getHeight(){
+		return height;
 	}
 }
