@@ -1,9 +1,25 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Terrain\TerrainManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts for Leap/LeapManager.cs">
     <Files>
-      <File FileName="Assets\Terrain\TerrainManager.cs" Line="7" Column="2" />
+      <File FileName="Assets/OVR/Scripts/Util/OVRPlayerController.cs" Line="279" Column="75" />
+      <File FileName="Assets/Scripts for Leap/LeapManager.cs" Line="227" Column="3" />
+      <File FileName="Assets/Scripts for Leap/LeapPlayerController.cs" Line="20" Column="21" />
+      <File FileName="Assets/OVR/Scripts/OVRCameraRig.cs" Line="62" Column="2" />
+      <File FileName="Assets/Scripts for Leap/RotationController.cs" Line="19" Column="59" />
+      <File FileName="Assets/Scripts for Leap/HandController.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts for Leap" expanded="True">
+              <Node name="TerrainWrapper.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

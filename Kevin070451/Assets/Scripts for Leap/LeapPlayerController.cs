@@ -8,6 +8,7 @@ public class LeapPlayerController : MonoBehaviour {
 
 	public float forceBaseMagnitude;
 	public float xMultiplier, yMultiplier, zMultiplier;
+	public float maxVelocity;
 
 	private Vector3 lastForce = Vector3.zero;
 	private Vector3 currentForce, deltaForce, inputForce;
@@ -21,7 +22,8 @@ public class LeapPlayerController : MonoBehaviour {
 		deltaForce = currentForce - lastForce;
 		Debug.Log("Normal Vector is: " + palmPilot.getNormal());
 		Debug.Log ("Height is: " + palmPilot.getHeight ());
-		rigidbody.AddForce (deltaForce);//, ForceMode.Acceleration);
+		if(!(rigidbody.velocity.magnitude > maxVelocity))
+			rigidbody.AddForce (deltaForce);//, ForceMode.Acceleration);
 	}
 
 	private Vector3 translate(Vector3 normalVector, float angle){
